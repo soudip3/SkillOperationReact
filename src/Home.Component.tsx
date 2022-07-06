@@ -12,7 +12,7 @@ interface Props{
     skillChecked:boolean
 }
 const api = axios.create({
-    baseURL: "http://192.168.63.62:81",
+    baseURL: "https://skilloperationnode.herokuapp.com/",
 })
 
 
@@ -47,7 +47,7 @@ export function Home({id, skillChecked }:Props) {
   return (
     <div className="App">
       <input type={'checkbox'} id='skillOperation' name='skillOperation' onClick={handleSkill} checked={value}></input>
-      <label htmlFor='skillOperation'>Add Dealer Skill</label>
+      <label htmlFor='skillOperation'>Add Soudip TestFlow Skill</label>
     </div>
   );
 }
